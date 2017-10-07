@@ -137,7 +137,7 @@ At the end of the cell 10 we have teh function displayLanes which integrates the
 ### Pipeline (video)
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
-
+I implemeted teh lanes class to help with the video processign and used averaging to help smooth out the lanes
 Here's a [link to my video result](./proccessed_project_video.mp4)
 
 ---
