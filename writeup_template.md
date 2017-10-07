@@ -33,7 +33,7 @@ I start by preparing "object points", which will be the (x, y, z) coordinates of
 I then used the output `objpoints` and `imgpoints` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.  I applied this distortion correction to the test image using the `cv2.undistort()` function and obtained this result: 
 
 <figure>
-    <img src="https://github.com/NRCar/P4/blob/master/output_images/undistorted.png" height="600" width="400" />
+    <img src="https://github.com/NRCar/P4/blob/master/output_images/undistorted.png"/>
     <figcaption text-align: center>Undistorted Calibration Image</figcaption>
 </figure>
 
@@ -44,7 +44,7 @@ I then used the output `objpoints` and `imgpoints` to compute the camera calibra
 To demonstrate this step, I will describe how I apply the distortion correction to one of the test images like this one:
 
 <figure>
-    <img src="https://github.com/NRCar/P4/blob/master/output_images/undistorted_test.png" height="600" width="400" />
+    <img src="https://github.com/NRCar/P4/blob/master/output_images/undistorted_test.png"/>
     <figcaption text-align: center>Undistorted Calibration Image</figcaption>
 </figure>
 
@@ -55,7 +55,7 @@ The code for my perspective transform includes a function called `warpPerspectiv
 I verified that my perspective transform was working as expected by warping the test image as shown
 
 <figure>
-    <img src="https://github.com/NRCar/P4/blob/master/output_images/birds_eye.png" height="600" width="400" />
+    <img src="https://github.com/NRCar/P4/blob/master/output_images/birds_eye.png" />
     <figcaption text-align: center>Warped birds eye view</figcaption>
 </figure>
 
@@ -78,7 +78,7 @@ sobel = Get_Sobel_IMG(birds_eye)
 ```
 
 <figure>
-    <img src="https://github.com/NRCar/P4/blob/master/output_images/binary_lanes.png" height="600" width="400" />
+    <img src="https://github.com/NRCar/P4/blob/master/output_images/binary_lanes.png" />
     <figcaption text-align: center>Bianry thresholded lanes</figcaption>
 </figure>
 
@@ -88,7 +88,7 @@ I used the histogram function to identify the peaks in the left and right half o
 
 
 <figure>
-    <img src="https://github.com/NRCar/P4/blob/master/output_images/histogram.png" height="600" width="400" />
+    <img src="https://github.com/NRCar/P4/blob/master/output_images/histogram.png"  />
     <figcaption text-align: center>Histogram showing peaks</figcaption>
 </figure>
 
@@ -128,7 +128,7 @@ def center(leftx, rightx, image):
 At the end of the cell 10 we have teh function displayLanes which integrates the above pipeline and gives us the lanes on the image.
 
 <figure>
-    <img src="https://github.com/NRCar/P4/blob/master/output_images/lanes.png" height="600" width="400" />
+    <img src="https://github.com/NRCar/P4/blob/master/output_images/lanes.png" />
     <figcaption text-align: center>Histogram showing peaks</figcaption>
 </figure>
 
